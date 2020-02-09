@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.thoughtworks.calculatepower.TestCalculatePower" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-02-09T06:31:48" hostname="DESKTOP-DSNLESO" time="0.039">
+  <properties/>
+  <testcase name="givenPowerCalculator_WhenBase0AndExponent5_thenShouldReturnCorrectValue" classname="com.thoughtworks.calculatepower.TestCalculatePower" time="0.015"/>
+  <testcase name="givenPowerCalculator_WhenBase2AndExponent0_thenShouldReturnCorrectValue" classname="com.thoughtworks.calculatepower.TestCalculatePower" time="0.0"/>
+  <testcase name="givenPowerCalculator_WhenBase2AndExponent2_thenShouldReturnCorrectValue" classname="com.thoughtworks.calculatepower.TestCalculatePower" time="0.001"/>
+  <testcase name="givenPowerCalculator_WhenBase2AndExponentNegativeNumber_thenShouldReturnCorrectValue" classname="com.thoughtworks.calculatepower.TestCalculatePower" time="0.004"/>
+  <testcase name="givenPowerCalculator_WhenBase9999999AndExponent100_thenShouldReturnCorrectValue" classname="com.thoughtworks.calculatepower.TestCalculatePower" time="0.001"/>
+  <testcase name="givenPowerCalculator_WhenBaseNegativeNumberAndExponent2_thenShouldReturnCorrectValue" classname="com.thoughtworks.calculatepower.TestCalculatePower" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
