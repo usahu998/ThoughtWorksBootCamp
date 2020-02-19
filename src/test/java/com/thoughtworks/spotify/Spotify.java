@@ -18,7 +18,7 @@ public class Spotify {
 
     @BeforeMethod
     public void setUp() {
-        tokenValue = "Bearer BQAmAwTQIaHLVbIGF8H3HlGB1YlfUDEBlwcha0OC2B4ekGUZzfPoZr6Xa_1f-8gSKfBMgoCya6qVYF8Nd9SmZpJYv33bsSqh-nbnwCob_eZuik8rKmuRdXayJgZEVvxCpCiKtDU6rsLgHBtWGWVQdcHQI1dMqkumHGPm8lwV4vdkWYwgw3-9NLdPzKp4PySplxx7QDIYJ7iASbin0dLtyrlytQa5cDba8vMbDawAj4fcExgFRH8l4BwgeTlUAroNCj5zO1XiSPTIN0lju7FvQmd13kiQmQ";
+        tokenValue = "Bearer BQCVUeHp0e8LS3Yuy7wXh1jL3_tX5awiuGKquGx2TYZKpiJgUdhzrRimr-GXpq8m52ToxiEONA1Of8A6Q9KxsLpTtZ7ZqTEEdjrBuSNQVu_p22UzfDTsgG2cIHsA0m-XOmka_DCnNKo2WZroxA8CWh5etX5LwOqftlxaBT-8XH7pi0lok_kRb7T4e-6Bytvi3Dyj6aAE4pM92p215zri3NXYZQH8sBa4j0ytDnJrPx41ymYI6t-ynVFg99wqX5r9wdUKRdCH5CCP2LH3X69jTMZyO-ZzcA";
     }
 
     @Test
@@ -52,8 +52,7 @@ public class Spotify {
                 .when()
                 .get("https://api.spotify.com/v1/me/playlists");
         JSONObject object3 = (JSONObject) new JSONParser().parse((response3.asString()));
-        Long total = (Long) object3.get("total");
-        count =total;
+        count = (Long) object3.get("total");
         System.out.println("count====>" + count);
 
 
@@ -73,8 +72,7 @@ public class Spotify {
                 .post("https://api.spotify.com/v1/users/{user_id}/playlists");
 //        response4.prettyPrint();
         JSONObject object4 = (JSONObject) new JSONParser().parse((response4.asString()));
-        String playlistId = (String) object4.get("id");
-        playlist_id =playlistId;
+        playlist_id = (String) object4.get("id");
         System.out.println("playlistid====>" + playlist_id);
 
         //update
